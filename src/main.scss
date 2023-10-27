@@ -1,0 +1,150 @@
+@import "../node_modules/normalize.css/normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+$mobile: 375px;
+$desktop: 1440px;
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}
+
+h1 {
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+}
+
+.card {
+    background: hsl(0, 0%, 100%);
+    max-width: 37rem;
+    margin: 0 auto;
+    border-radius: 24px;
+    box-shadow: 4px 5px 9px 0px #dfdfdf;
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.result {
+    padding: 32px;
+    border-radius: 24px;
+    background-image: linear-gradient(180deg,
+            hsl(252deg 100% 67%) 0%,
+            hsl(251deg 98% 65%) 11%,
+            hsl(250deg 96% 64%) 22%,
+            hsl(248deg 94% 63%) 33%,
+            hsl(247deg 92% 61%) 44%,
+            hsl(246deg 89% 60%) 56%,
+            hsl(245deg 88% 58%) 67%,
+            hsl(243deg 85% 57%) 78%,
+            hsl(242deg 83% 55%) 89%,
+            hsl(241deg 81% 54%) 100%);
+
+    &__heading {
+        color: hsl(241, 100%, 89%);
+    }
+}
+
+.summary {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    &__heading {
+        font-size: 18px;
+        font-weight: 800;
+        color: hsl(224, 30%, 27%);
+    }
+
+    &__button {
+        width: 100%;
+        border: none;
+        border-radius: 20px;
+        background: hsl(224, 30%, 27%);
+        color: hsl(0, 0%, 100%);
+    }
+}
+
+.category {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: 500;
+
+    &__div {
+        display: flex;
+    }
+
+    &__icon {
+
+    }
+
+    &__name {
+        margin: 0;
+    }
+
+    &__score {
+
+
+        &--my_score {
+
+        }
+    }
+}
+
+.reaction {
+    background: hsla(0, 100%, 67%, 0.05);
+    &__name {
+        color: hsl(0, 100%, 67%);
+    }
+}
+
+.memory {
+    background: hsl(241, 100%, 89%);
+
+    &__name {
+        color: hsl(39, 100%, 56%);
+    }
+}
+
+.verbal {
+    &__name {
+        color: hsl(166, 100%, 37%);
+    }
+}
+
+.visual {
+    background: hsl(221, 100%, 96%);
+
+    &__name {
+        color: hsl(234, 85%, 45%);
+    }
+}
