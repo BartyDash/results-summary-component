@@ -29,6 +29,10 @@ h1 {
     margin: 0;
 }
 
+p {
+    margin: 0;
+}
+
 body {
     min-height: 100vh;
     display: flex;
@@ -54,6 +58,10 @@ body {
 .result {
     padding: 32px;
     border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //gap: 12px;
     background-image: linear-gradient(180deg,
             hsl(252deg 100% 67%) 0%,
             hsl(251deg 98% 65%) 11%,
@@ -67,7 +75,50 @@ body {
             hsl(241deg 81% 54%) 100%);
 
     &__heading {
+        font-size: 18px;
+        font-weight: 800;
         color: hsl(241, 100%, 89%);
+    }
+
+    &__circle {
+        margin: 25px 0;
+        color: hsl(241, 100%, 89%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        background-image: linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    }
+
+    &__score {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 14px;
+
+        &--special {
+            color: hsl(0, 0%, 100%);
+            font-size: 60px;
+            font-weight: 700;
+        }
+    }
+
+    &__praise {
+        font-size: 25px;
+        font-weight: 700;
+        color: hsl(0, 0%, 100%);
+        margin-bottom: 16px;
+    }
+
+    &__description {
+        text-align: center;
+        color: hsl(241, 100%, 89%);
+        font-size: 15px;
+        font-weight: 500;
+        padding: 0 10px;
     }
 }
 
