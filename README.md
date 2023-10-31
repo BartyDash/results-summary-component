@@ -21,8 +21,8 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution](https://www.frontendmentor.io/solutions/results-summary-component-using-sass-and-dynamically-loaded-data-by-js-k5FWjVblcZ)
+- Live Site URL: [website](https://r-s-component.netlify.app)
 
 ## My process
 
