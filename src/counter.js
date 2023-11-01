@@ -13,20 +13,14 @@ for (const [index, element] of counters.entries()) {
     category.textContent = data[index].category;
     score.textContent = 0;
     updateCounter(score, data[index].score, 20);
-    //icon.src = data[index].icon;//I don't know how to do it properly. it isn't working :(
-    //icon.src = new URL('./assets/images/icon-reaction.svg', import.meta.url);
-    //icon.src = new URL(data[0].icon, import.meta.url);
+    //dynamic importing working. yeaaa!!!
+    icon.src = data[index].icon;
 
     fullScore += data[index].score;
 }
 //final result
 resultScore.textContent = 0;
 updateCounter(resultScore, parseInt(fullScore/counters.length), 20);
-
-//create new image in DOM
-// let img = document.createElement('img');
-// img.src = new URL('./assets/images/icon-reaction.svg', import.meta.url);
-// document.body.appendChild(img);
 
 
 function updateCounter(selector, targetScore, speed) {
