@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html",
-    "postbuild": "xcopy public\\* dist\\ /s /e"
+    "postbuild": "cp -r public/* dist/"
   },
   "author": "",
   "license": "ISC",
